@@ -6,22 +6,23 @@ public class MyFirstProject {
     hello ("world");
     hello ("user");
     hello ("Eve");
+Square s = new Square(5);
+    s.l = 5;
+    System.out.println("area square with side " + s.l + " = " + area(s));
 
-    double l = 5;
-    System.out.println("area square with side " + l + " = " + area(l));
-
-    double a = 4;
-    double b = 6;
-    System.out.println("area rectangle with side " + a + "  and " + b + " = " + area(a, b));
+    Rectangle r = new Rectangle(4,6);
+    r.a = 4;
+    r.b = 6;
+    System.out.println("area rectangle with side " + r.a + "  and " + r.b + " = " + area(r));
     }
 
   public static void hello (String somebody) {
-  System.out.println("Hello, "+somebody+"!");
+  System.out.println("Hello, " + somebody + "!");
 }
-public static double area (double len) {
-    return 1*1;
+public static double area (Square s) {
+    return s.l * s.l;
 }
-  public static double area (double a, double b){
-    return a*b;
+  public static double area (Rectangle r){
+    return r.a * r.b;
   }
 }

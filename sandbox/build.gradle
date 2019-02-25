@@ -4,8 +4,11 @@ mainClassName = "ru.s.pft.MyFirstProject1"
 repositories {
     mavenCentral()
 }
-
+sourceCompatibility = 1.8
 
 dependencies {
     compile 'org.testng:testng:7.0.0-beta3'
+
+    testCompile 'org.seleniumhq.selenium:selenium-java:3.141.59'
+
 }
